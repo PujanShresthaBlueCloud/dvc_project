@@ -6,7 +6,7 @@ import os
 import yaml 
 import pandas as pd
 
-# get the arguments in the cli command we need argparse
+# get the arguments in the cli command we need argparse 
 import argparse 
 
 def read_params(config_path):
