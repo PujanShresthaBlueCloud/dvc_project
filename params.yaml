@@ -14,15 +14,19 @@ split_data:
   test_path: data/processed/test_winequality.csv
   test_size: 0.2
 
-estimator:
+estimators:
   ElasticNet:
     params:
-      alpha:
-      l1_ration:
+      alpha: 0.88
+      l1_ratio: 0.89
 
-model_dir: saved_model
+model_dir: saved_models
 
-# reports:
+reports:
+  params: report/params.json
+  scores: report/scores.json
+
+webapp_model_dir: prediction_service/model/model.joblib
 
 
 
