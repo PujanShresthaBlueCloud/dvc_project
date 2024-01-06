@@ -28,4 +28,14 @@ we can also share the package in tar file by running sdist is standard distribut
 python setup.py sdist bdist_wheel
 so we can share the tar file inside dist folder to install the library
 
+Range in the our data source case for good wine testing
+we install the jupyterlab
+pip install jupyterlab
+
+then to open jupyter notebook we run the command below:
+jupyter-lab notebooks/
+
+then we copy the NotInRange class to test_config.py file for testing
+then we do pytest -v to check
+
 
