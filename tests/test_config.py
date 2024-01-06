@@ -1,3 +1,4 @@
+# For test function test_ prefix is neccessary otherwise pytest will not run the test function
 import pytest # we can use this as well
 
 class NotInRange(Exception):
@@ -14,3 +15,8 @@ def test_generic():
     with pytest.raises(NotInRange):
         if a not in range(10, 20):
             raise NotInRange
+
+def test_something():
+    a = 5
+    b = 5
+    assert True
