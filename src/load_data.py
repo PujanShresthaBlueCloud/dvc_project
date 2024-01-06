@@ -5,7 +5,7 @@ import os
 from get_data import read_params, get_data
 import argparse
 
-def load_and_save(config_path: str) -> None:
+def load_and_save(config_path):
     """
     Loads the data from config file data source and saves it inside data/raw folder for further 
     processing.
@@ -25,5 +25,4 @@ if __name__ == '__main__':
     args = argparse.ArgumentParser()
     args.add_argument('--config', default='params.yaml')
     parsed_args = args.parse_args()
-    print(parsed_args)
     load_and_save(config_path=parsed_args.config)

@@ -9,7 +9,7 @@ import pandas as pd
 # get the arguments in the cli command we need argparse
 import argparse 
 
-def read_params(config_path: str) -> dict:
+def read_params(config_path):
     """ 
     Read the configuration yaml file and returns the configuration
     Args:
@@ -23,7 +23,7 @@ def read_params(config_path: str) -> dict:
 
     return config
 
-def get_data(config_path: str) -> pd.DataFrame:
+def get_data(config_path):
     """ 
     Get the data from data source mentioned in params.yaml 
     Args:
@@ -42,6 +42,6 @@ if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument("--config", default="params.yaml")
     parsed_args = args.parse_args()
-    get_data(config_path=parsed_args.config)
+    data = get_data(config_path=parsed_args.config)
 
 
