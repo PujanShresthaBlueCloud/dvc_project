@@ -46,3 +46,8 @@ we can use library flake8 for pep 8 testing
 
 
 So now we create a web app and app.py file
+
+Now we have to create directory as .github workflows for ci-cd 
+mkdir -p .github/workflows
+
+and create a file called ci-cd.yaml
