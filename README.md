@@ -51,3 +51,14 @@ Now we have to create directory as .github workflows for ci-cd
 mkdir -p .github/workflows
 
 and create a file called ci-cd.yaml
+
+Ingerating with heroku 
+creating application dvc_project
+to create authorization token click account settings and applications
+get the token and then create secrets in github account
+after adding the repo secret we need to create procfile
+create procfile in root it is the entry point for heroku, heroku search for the Procfile to connect
+to run application
+so run command below to create procfile on the root directory
+touch Procfile
+
