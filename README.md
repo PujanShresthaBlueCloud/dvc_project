@@ -14,6 +14,8 @@ create tests folder and create file conftest.py and test_config.py and __init__.
 for test alway define test_ at first as prefix
 to run test we can do pytest -v 
 or we can do tox 
+for re-run we have to do:
+tox -r
 
 now create setup.py to create package 
 and install -e so that all the local requirements are then installed in the package and install the package
@@ -37,5 +39,9 @@ jupyter-lab notebooks/
 
 then we copy the NotInRange class to test_config.py file for testing
 then we do pytest -v to check
+
+# standard python coding guidelines 
+PEP 8
+we can use library flake8 for pep 8 testing
 
 
